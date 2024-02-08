@@ -1,0 +1,37 @@
+.tracking-panel {
+  min-height: 100dvh;
+  padding-inline: 1.5rem;
+  padding-block: 5rem;
+  color: var(--white);
+  background-color: var(--very-dark-blue);
+}
+.tracking-panel__container {
+  max-width: 69.375rem;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .tracking-panel__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .tracking-panel__container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1280px) {
+  .tracking-panel__container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.875rem;
+  }
+}
+@media (min-height: 730px) {
+  .tracking-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
